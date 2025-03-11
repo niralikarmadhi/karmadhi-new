@@ -1,0 +1,51 @@
+.header {
+  z-index: 99;
+  transition: all 0.5s ease-in-out;
+  
+  .header-logo {
+    height: 60px;
+    width: auto;
+  }
+
+  .header-container {
+    .header-menu {
+      .menu-link {
+        padding: 20px 25px;
+        position: relative;
+
+        .sub-arrow {
+          height: 18px;
+          margin-left: 8px;
+        }
+
+        &:hover {
+          .sub-menu {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        .sub-menu {
+          visibility: hidden;
+          opacity: 0;
+          padding: 10px 20px;
+          width: fit-content;
+          top: 100%;
+          left: 0;
+
+          li {
+            padding: 10px 20px 10px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &.header-fixed{
+    transform: translateY(0px);
+    &.hidden{
+        transform: translateY(-100px);
+        transition: all 0.5s ease-in-out;
+    }
+  }
+}

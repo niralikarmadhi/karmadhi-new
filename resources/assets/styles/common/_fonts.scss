@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "urbanist-regular";
+    src: url("/wp-content/themes/Boilerplate/assets/fonts/urbanist-regular.ttf")
+      format("truetype");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "inter_18pt-bold";
+    src: url("/wp-content/themes/Boilerplate/assets/fonts/inter_18pt-bold.ttf")
+      format("truetype");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "inter_18pt-semibold";
+    src: url("/wp-content/themes/Boilerplate/assets/fonts/inter_18pt-semibold.ttf")
+      format("truetype");
+    font-style: normal;
+  }
+  
+  .urbanist {
+    font-family: "urbanist-regular", sans-serif;
+  }
+  
+  .inter-bold {
+    font-family: "inter_18pt-bold", sans-serif;
+  }
+  
+  .inter-semibold {
+    font-family: "inter_18pt-semibold", sans-serif;
+  }
+  

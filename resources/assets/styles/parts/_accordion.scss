@@ -1,0 +1,43 @@
+.closet-accordion {
+    .closet-item {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .closet-header {
+        .accordion-close {
+            border: 1px solid var(--text-color);
+            height: 50px;
+            width: 50px;
+
+            img {
+                width: 22px;
+                filter: var(--brand-img);
+            }
+
+            @include media-breakpoint-down(lg) {
+                height: 30px;
+                width: 30px;
+
+                img {
+                    width: 15px;
+                }
+            }
+        }
+
+        &.active {
+            .accordion-close {
+                background-color: var(--text-color);
+
+                img {
+                    transform: rotate(90deg);
+                    filter: var(--arrow-bg);
+                }
+            }
+        }
+    }
+
+
+    .closet-content {
+        display: none;
+    }
+}

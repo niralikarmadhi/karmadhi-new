@@ -1,0 +1,329 @@
+// ------------- BACKGROUND COLOR -------------
+.bg-18181B {
+    background-color: $color-18181B;
+}
+
+.bg-FF4A4A {
+    background-color: $color-FF4A4A;
+}
+
+.bg-FFB74A {
+    background-color: $color-FFB74A;
+}
+
+.bg-A54AFF {
+    background-color: $color-A54AFF;
+}
+
+.bg-222226 {
+    background-color: $color-222226;
+}
+
+.bg-3E3E3E {
+    background-color: $color-3E3E3E;
+}
+
+.bg-3B3B45 {
+    background-color: $color-3B3B45;
+}
+
+.bg-0AB39C {
+    background-color: $color-0AB39C;
+}
+
+.bg-2C2C2E {
+    background-color: $color-2C2C2E;
+}
+
+.bg-47474e {
+    background-color: $color-47474e;
+}
+
+// ------------- TEXT COLOR -------------
+
+.text-18181B {
+    color: $color-18181B;
+}
+
+.text-FF4A4A {
+    color: $color-FF4A4A;
+}
+
+.text-FFB74A {
+    color: $color-FFB74A;
+}
+
+.text-A54AFF {
+    color: $color-A54AFF;
+}
+
+.text-222226 {
+    color: $color-222226;
+}
+
+.text-3E3E3E {
+    color: $color-3E3E3E;
+}
+
+.text-3B3B45 {
+    color: $color-3B3B45;
+}
+
+.text-0AB39C {
+    color: $color-0AB39C;
+}
+
+.text-2C2C2E {
+    color: $color-2C2C2E;
+}
+
+// ------------- FONT -------------
+.font18 {
+    font-size: $font18;
+}
+
+.font20 {
+    font-size: $font20;
+}
+
+.font25 {
+    font-size: $font25;
+}
+
+.font26 {
+    font-size: $font26;
+}
+
+.font30 {
+    font-size: $font30;
+}
+
+.font35 {
+    font-size: $font35;
+}
+
+.font40 {
+    font-size: $font40;
+}
+
+.font45 {
+    font-size: $font45;
+}
+
+.font50 {
+    font-size: $font50;
+}
+
+.font55 {
+    font-size: $font55;
+}
+
+.font60 {
+    font-size: $font60;
+}
+
+.font80 {
+    font-size: $font80;
+}
+
+.font100 {
+    font-size: $font100;
+}
+
+.font130 {
+    font-size: $font130;
+}
+
+.font150 {
+    font-size: $font150;
+}
+
+// ------------- LINE-HEIGHT -------------
+.leading1_2 {
+    line-height: $leading1_2;
+}
+
+.leading1_5 {
+    line-height: $leading1_5;
+}
+
+.space1_5 {
+    letter-spacing: $space1_5;
+}
+
+.space_3 {
+    letter-spacing: $space_3;
+}
+
+// ------------- RADIUS -------------
+.radius5 {
+    border-radius: $radius5;
+}
+
+.radius10 {
+    border-radius: $radius10;
+}
+
+.radius15 {
+    border-radius: $radius15;
+}
+
+.radius20 {
+    border-radius: $radius20;
+}
+
+.radius30 {
+    border-radius: $radius30;
+}
+
+.radius40 {
+    border-radius: $radius40;
+}
+
+.radius60 {
+    border-radius: $radius60;
+}
+
+// ---------- Mode color ----------
+
+.text--color {
+    color: var(--text-color);
+}
+
+.background--color {
+    background-color: var(--background-color);
+}
+
+.logo--bg {
+    background-color: var(--logo-bg);
+}
+
+.service-list {
+    background-color: var(--service-list);
+}
+
+.border--color {
+    border-color: var(--border) !important;
+}
+
+@include media-breakpoint-down(lg) {
+    .res_font18 {
+        font-size: $font18;
+    }
+
+    .res_font20 {
+        font-size: $font20;
+    }
+
+    .res_font25 {
+        font-size: $font25;
+    }
+
+    .res_font26 {
+        font-size: $font26;
+    }
+
+    .res_font30 {
+        font-size: $font30;
+    }
+
+    .res_font35 {
+        font-size: $font35;
+    }
+
+    .res_font40 {
+        font-size: $font40;
+    }
+
+    .res_font45 {
+        font-size: $font45;
+    }
+
+    .res_font50 {
+        font-size: $font50;
+    }
+
+    .res_font55 {
+        font-size: $font55;
+    }
+
+    .res_font60 {
+        font-size: $font60;
+    }
+
+    .res_font80 {
+        font-size: $font80;
+    }
+
+    .res_font100 {
+        font-size: $font100;
+    }
+
+    .res_font130 {
+        font-size: $font130;
+    }
+
+    .res_font150 {
+        font-size: $font150;
+    }
+
+    .res_font16 {
+        font-size: $res_font16;
+    }
+    .res_font14 {
+        font-size: $res_font14;
+    }
+    .res_font12 {
+        font-size: $res_font12;
+    }
+
+
+    .res_leading1_2 {
+        line-height: $leading1_2;
+    }
+
+    .res_leading1_5 {
+        line-height: $leading1_5;
+    }
+
+    .res_space1_5 {
+        letter-spacing: $space1_5;
+    }
+
+    .res_space_3 {
+        letter-spacing: $space_3;
+    }
+
+    .res_space_0 {
+        letter-spacing: $res_space_0;
+    }
+
+
+    .res_radius5 {
+        border-radius: $radius5;
+    }
+
+    .res_radius10 {
+        border-radius: $radius10;
+    }
+
+    .res_radius15 {
+        border-radius: $radius15;
+    }
+
+    .res_radius20 {
+        border-radius: $radius20;
+    }
+
+    .res_radius30 {
+        border-radius: $radius30;
+    }
+
+    .res_radius40 {
+        border-radius: $radius40;
+    }
+
+    .res_radius60 {
+        border-radius: $radius60;
+    }
+}

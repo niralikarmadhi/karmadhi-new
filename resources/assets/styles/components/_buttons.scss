@@ -1,0 +1,79 @@
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+.theme-btn {
+    padding-inline: 25px;
+    height: 62px;
+    display: inline-flex;
+    align-items: center;
+
+    &.white-btn {
+        background-color: var(--background-color);
+        border: 1px solid var(--text-color);
+        color: var(--text-color);
+
+        .arrow {
+            path {
+                fill: var(--text-color);
+            }
+            @include media-breakpoint-down(lg){
+                svg { 
+                    width: 20px;
+                }
+            }
+        }
+        
+
+        &:hover {
+            background-color: var(--text-color);
+            color: var(--background-color);
+
+            .arrow {
+                svg {
+                    transform: translateX(4px);
+                }
+
+                path {
+                    fill: var(--background-color);
+                }
+            }
+        }
+    }
+
+    .btn-text {
+        margin-right: 15px;
+    }
+}
+
+.more-btn {
+    .btn-text {
+        margin-right: 20px;
+    }
+
+    svg {
+        path {
+            fill: var(--text-color);
+        }
+    }
+    .arrow {
+        @include media-breakpoint-down(lg){
+            svg { 
+                width: 20px;
+            }
+        }
+    }
+
+    &:hover {
+        .arrow {
+            svg {
+                transform: translateX(5px);
+            }
+        }
+    }
+}

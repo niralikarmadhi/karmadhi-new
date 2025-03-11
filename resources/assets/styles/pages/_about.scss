@@ -1,0 +1,10 @@
+.image-section {
+    .img-part {
+        height: 500px;
+        width: 100%;
+
+        @include media-breakpoint-down(lg) {
+            height: 250px;
+        }
+    }
+}

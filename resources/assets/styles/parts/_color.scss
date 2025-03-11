@@ -1,0 +1,16 @@
+.light-text {
+  -webkit-text-fill-color: transparent;
+  background-image: var(--text-gradient);
+  background-clip: text;
+}
+
+.border-text {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--text-color);
+  color: transparent;
+}
+
+.mode-btn {
+  right: 12px;
+  bottom: 12px;
+}

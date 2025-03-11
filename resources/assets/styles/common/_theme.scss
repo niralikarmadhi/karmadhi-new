@@ -1,0 +1,244 @@
+.container {
+    max-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.container-large {
+    max-width: 1720px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1920px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.row {
+    margin-inline: 0px;
+
+    &>* {
+        padding-inline: 0px;
+    }
+}
+
+.row10 {
+    margin-inline: -10px;
+
+    &>* {
+        padding-inline: 10px;
+    }
+}
+
+.row20 {
+    margin-inline: -20px;
+
+    &>* {
+        padding-inline: 20px;
+    }
+}
+
+.row25 {
+    margin-inline: -25px;
+
+    &>* {
+        padding-inline: 25px;
+    }
+}
+
+.row30 {
+    margin-inline: -30px;
+
+    &>* {
+        padding-inline: 30px;
+    }
+}
+
+.row40 {
+    margin-inline: -40px;
+
+    &>* {
+        padding-inline: 40px;
+    }
+}
+
+.row60 {
+    margin-inline: -60px;
+
+    &>* {
+        padding-inline: 60px;
+    }
+}
+
+.row45 {
+    margin-inline: -45px;
+
+    &>* {
+        padding-inline: 45px;
+    }
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.h-fit {
+    height: fit-content;
+}
+
+.h-vh {
+    height: 100vh;
+}
+
+// TEXT OVERFLOW CSS
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@include media-breakpoint-down(lg) {
+    .px-p-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .pe-p-0 {
+        padding-right: 0 !important;
+    }
+
+    .ps-p-0 {
+        padding-left: 0 !important;
+    }
+
+    .px-p-p {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .mx-m-0 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .res-w-100 {
+        width: 100% !important;
+    }
+
+    .res-h-100 {
+        height: 100%;
+    }
+
+    .res-w-auto {
+        width: auto !important;
+    }
+
+    .res-h-vh {
+        height: 100vh;
+    }
+
+    .res-w-fit {
+        width: fit-content !important;
+    }
+
+    .res-h-fit {
+        height: fit-content !important;
+    }
+
+    .text-truncate-none {
+        text-overflow: initial !important;
+        line-clamp: initial !important;
+        -webkit-line-clamp: initial !important;
+    }
+}
+
+.toggle-switch {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    // background-image: linear-gradient(90deg, #161e54 50%, skyblue 50%);
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1) inset;
+    padding: 0;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    transition: 0.7s;
+
+    input {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        z-index: 999;
+    }
+
+    .round-button {
+        position: relative;
+        transform: translateX(-5%);
+        height: 100%;
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        transition: 0.4s;
+        transition-timing-function: ease-in-out;
+
+        .button-body {
+            position: absolute;
+            z-index: 0;
+            height: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-image: radial-gradient(#f4f4f4, #cacaca);
+            box-shadow: 0 0 20px #f4f4f4;
+        }
+
+        @for $i from 1 through 3 {
+            div {
+                &:nth-child(#{$i}) {
+                    background-color: #cacaca;
+                    height: $i * 10%;
+                    aspect-ratio: 1;
+                    transform: rotateZ(90deg) translate($i%3 * (-1em), $i * 0.5em) !important;
+                    border-radius: 50%;
+                    transition: 0.4s;
+                    transform: rotateZ(180deg);
+                }
+            }
+        }
+        
+    }
+
+    input:checked~.round-button {
+        transform: translateX(0%);
+        .button-body {
+            background-image: radial-gradient(#ffcc33 30%, #fc9601);
+            box-shadow: 0 0 20px #ffcc33;
+        }
+
+        @for $i from 1 through 3 {
+            div {
+                &:nth-child(#{$i}) {
+                    height: 90%;
+                    aspect-ratio: 1;
+                    position: absolute;
+                    z-index: 1;
+                    transform: rotateZ($i * 30deg) !important;
+                    transition: 0.4s;
+                    border-radius: 0%;
+                    background-image: radial-gradient(#ffcc33 30%, #fc9601);
+
+                }
+            }
+        }
+    }
+}

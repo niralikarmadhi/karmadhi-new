@@ -1,0 +1,60 @@
+.brand-bg-logo {
+    width: 340px;
+    height: 170px;
+    background-color: var(--logo-bg);
+    border-radius: 20px;
+
+    @include media-breakpoint-down(lg) {
+        width: 240px;
+        height: 120px;
+    }
+
+    .brand-logo {
+        height: 50px;
+        display: inline-flex;
+
+        @include media-breakpoint-down(lg) {
+            height: 40px;
+        }
+
+        img {
+            filter: grayscale(1) brightness(15);
+        }
+    }
+}
+
+.service-list-area {
+    padding: 20px;
+
+    .service-list {
+        .service-arrow {
+            opacity: 0;
+            visibility: hidden;
+
+            svg {
+                path {
+                    fill: var(--text-color);
+                }
+            }
+        }
+
+        &.active {
+            background-color: var(--background-color);
+            padding-inline: 15px;
+        }
+
+        &:hover {
+            background-color: var(--background-color);
+            padding-left: 20px;
+
+            .service-arrow {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.service-open-img {
+    height: 300px;
+}

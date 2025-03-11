@@ -1,0 +1,16 @@
+.service-section {
+  .service-content-cards {
+    border-bottom: 1px solid $color-4d4d4d;
+
+    &:first-child {
+      padding-top: 0px;
+    }
+  }
+  .right-content {
+    .services-content-img {
+      height: 650px;
+      position: sticky;
+      top: 0;
+    }
+  }
+}

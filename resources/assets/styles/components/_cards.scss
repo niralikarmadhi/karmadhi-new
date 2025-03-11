@@ -1,0 +1,222 @@
+.card-hover {
+    .img {
+        transform: scale(1);
+        transition: 0.8s all ease-in-out;
+    }
+
+    &:hover {
+        .img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.related-blog-card {
+    .article-img {
+        height: 430px;
+
+        @include media-breakpoint-down(lg) {
+            height: 250px;
+        }
+    }
+}
+
+.blog-card {
+    .blog-img {
+        height: 470px;
+
+        @include media-breakpoint-down(lg) {
+            height: 300px;
+        }
+    }
+}
+
+.location-card {
+    height: 600px;
+
+    @include media-breakpoint-down(lg) {
+        height: 300px;
+    }
+}
+
+.flag-img {
+    width: 35px;
+}
+
+.projects-section {
+    .project-cards {
+        .project-img {
+            height: 680px;
+
+            @include media-breakpoint-down(lg) {
+                height: 395px;
+            }
+        }
+
+        &:nth-child(odd) {
+            margin-top: 0px;
+        }
+    }
+}
+
+.service-cards {
+    .service-img {
+        height: 650px;
+
+        @include media-breakpoint-down(lg) {
+            height: 350px;
+        }
+    }
+}
+
+.service-cards .service-img,
+.team-section .team-member-img,
+.projects-section .project-img {
+    .view-circle {
+        height: 120px;
+        width: 120px;
+        background-color: var(--view-bg);
+        opacity: 0;
+        visibility: hidden;
+
+        &:hover {
+            background-color: var(--hover-bg);
+        }
+    }
+
+    &:hover {
+        .view-circle {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.counter-section {
+    .counter-card-container {
+        .counter-card {
+            padding: 35px 45px;
+        }
+
+        &:first-child {
+            .counter-card {
+                .plus {
+                    color: $color-FF4A4A;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            .counter-card {
+                .plus {
+                    color: $color-FFB74A;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            .counter-card {
+                .plus {
+                    color: $color-0AB39C;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            .counter-card {
+                .plus {
+                    color: $color-A54AFF;
+                }
+            }
+        }
+    }
+}
+
+.team-section-slider {
+    .slick-list {
+        margin-inline: -20px;
+
+        .slick-slide {
+            padding-inline: 20px;
+        }
+    }
+
+    .team-card {
+        .team-member-img {
+            background-color: var(--text-color);
+            height: 425px;
+            width: auto;
+
+            @include media-breakpoint-down(lg) {
+                height: 365px;
+            }
+        }
+
+        &:hover {
+            .team-member-img {
+                background-color: $color-FFDA94;
+
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.testimonial-cards {
+    border: 1px solid var(--border);
+    padding: 50px 55px 50px 50px;
+
+    .start-icon {
+        height: 18px;
+    }
+
+    .testimonial-img {
+        height: 90px;
+        width: 90px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 25px;
+
+        .testimonial-img {
+            height: 70px;
+            width: 70px;
+        }
+
+    }
+}
+
+// ----- technology card -----
+.technology-card {
+    .tech-count {
+        top: 20px;
+        left: 30px;
+    }
+
+    .tech-img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+}
+
+.freelancer-team {
+    .team-card {
+        .team-member-img {
+            background-color: var(--text-color);
+            height: 425px;
+            width: auto;
+        }
+
+        &:hover {
+            .team-member-img {
+                background-color: $color-FFDA94;
+
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
