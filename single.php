@@ -22,7 +22,7 @@ $article_section = get_field('article_section');
             while (have_rows("flexible_content")):
                 the_row(); ?>
                 <div class="center-content">
-                    <div class="col-10 mx-auto">
+                    <div class="col-lg-10 mx-auto">
                         <?php if (get_row_layout() == "content_box"):
                             $content = get_sub_field('content');
                         ?>
@@ -79,7 +79,7 @@ $article_section = get_field('article_section');
                             ?>
                             <?php if (!empty($content)): ?>
                                 <div class="logo--bg radius15 overflow-hidden dpt-60 dpb-60 dmt-60 dmb-60">
-                                    <div class="col-10 mx-auto urbanist font20 leading1_5 text-center text--color pe-5">
+                                    <div class="col-10 mx-auto urbanist font20 leading1_5 text-center text--color pe-lg-5">
                                         <?= $content; ?>
                                     </div>
                                 </div>
@@ -102,20 +102,20 @@ $article_section = get_field('article_section');
     <section class="related-blog-section">
         <div class="container">
             <?php if (!empty($article_section['prefix'])): ?>
-                <div class="main-title title light-text inter-bold font150 leading1_2 space_3">
+                <div class="main-title title light-text inter-bold font150 leading1_2 space_3 res_font80">
                     <?= $article_section['prefix'] ?>
                 </div>
             <?php endif; ?>
             <div class="row dmb-70">
-                <div class="col-7 head-title">
+                <div class="col-lg-7 head-title">
                     <?php if (!empty($article_section['heading'])): ?>
-                        <div class="inter-semibold font60 leading1_2 space1_5 text-capitalize text--color dmb-25">
+                        <div class="inter-semibold font60 leading1_2 space1_5 text-capitalize text--color dmb-25 res_font25">
                             <?= $article_section['heading'] ?>
                         </div>
                     <?php endif; ?>
 
                     <?php if (!empty($article_section['content'])): ?>
-                        <div class="col-10">
+                        <div class="col-lg-10">
                             <div class="urbanist font20 leading1_5 fw-normal text--color">
                                 <?= $article_section['content'] ?>
                             </div>
@@ -147,7 +147,7 @@ $article_section = get_field('article_section');
                         $title = $blog_post->post_title;
                         $category = get_the_terms($id, 'category');
                         ?>
-                        <a class="col-4 related-blog-card dmb-90 text-decoration-none" href="<?= the_permalink($id) ?>">
+                        <a class="col-lg-4 related-blog-card dmb-90 tmb-45 text-decoration-none" href="<?= the_permalink($id) ?>">
                             <div class="article-img radius30 overflow-hidden dmb-35 card-hover">
                                 <img src="<?php echo get_the_post_thumbnail_url($id); ?>" class="w-100 h-100 object-cover img" alt="..">
                             </div>
@@ -182,7 +182,7 @@ $article_section = get_field('article_section');
                         $title = $project_post->post_title;
 
                         ?>
-                        <a class="col-4 related-blog-card dmb-90 text-decoration-none" href="<?= the_permalink($id) ?>">
+                        <a class="col-lg-4 related-blog-card dmb-90 tmb-45 text-decoration-none" href="<?= the_permalink($id) ?>">
                             <div class="article-img radius30 overflow-hidden dmb-35 card-hover">
                                 <img src="<?php echo get_the_post_thumbnail_url($id); ?>" class="w-100 h-100 object-cover img" alt="..">
                             </div>

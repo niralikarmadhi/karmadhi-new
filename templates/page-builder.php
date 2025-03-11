@@ -637,7 +637,7 @@ $flexibleContent = get_field("flexible_content");
                                 <div class="marquee_content">
                                     <div class="brand-bg-logo d-flex align-items-center justify-content-center">
                                         <div class="brand-logo">
-                                            <img src="<?= $slider['image']; ?>" class="h-100" alt="">
+                                            <img src="<?= $slider['image']; ?>" class="w-100" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -936,7 +936,7 @@ $flexibleContent = get_field("flexible_content");
                             </div>
                         <?php endif; ?>
                         <?php if (!empty($content)): ?>
-                            <div class="urbanist font20 fw-normal text--color col-10 mx-auto">
+                            <div class="urbanist font20 fw-normal text--color col-lg-10 mx-auto">
                                 <?= $content; ?>
                             </div>
                         <?php endif; ?>

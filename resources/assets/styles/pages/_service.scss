@@ -1,7 +1,7 @@
 .brand-bg-logo {
     width: 340px;
     height: 170px;
-    background-color: var(--logo-bg);
+    background-color: var(--icon-logo-bg);
     border-radius: 20px;
 
     @include media-breakpoint-down(lg) {
@@ -10,7 +10,7 @@
     }
 
     .brand-logo {
-        height: 50px;
+        width: 140px;
         display: inline-flex;
 
         @include media-breakpoint-down(lg) {
@@ -18,7 +18,8 @@
         }
 
         img {
-            filter: grayscale(1) brightness(15);
+            mix-blend-mode: multiply;
+            filter: contrast(1);
         }
     }
 }
@@ -57,4 +58,8 @@
 
 .service-open-img {
     height: 300px;
+
+    @include media-breakpoint-down(lg) {
+        height: 250px;
+    }
 }

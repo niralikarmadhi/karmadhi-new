@@ -1,4 +1,4 @@
-    <!-- <?php
+    <?php
     $header_logo = get_field('header_logo', 'option');
     $white_logo = get_field('white_logo', 'option');
     $black_logo = get_field('black_logo', 'option');
@@ -95,4 +95,4 @@
                 </div>
             </div>
         </div>
-    </header> -->
+    </header>

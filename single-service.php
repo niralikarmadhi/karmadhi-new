@@ -26,14 +26,14 @@ $service_image = get_field('service_image');
 
 <section class="service-list-section">
     <div class="container">
-        <div class="col-10 mx-auto">
+        <div class="col-lg-10 mx-auto">
             <?php if (!empty($content)): ?>
                 <div class="urbanist font font20 text--color dmb-150 center-content">
                     <div class="dmb-20"><?= $content; ?></div>
                 </div>
             <?php endif; ?>
             <div class="row row25">
-                <div class="col-lg-4">
+                <div class="col-lg-4 dmb-35">
                     <?php if (!empty($service_list['service_list'])): ?>
                         <div class="service-list-area service-list radius15 position-sticky top-0 center-content">
                             <?php if (!empty($service_list['heading'])): ?>
@@ -62,7 +62,7 @@ $service_image = get_field('service_image');
                         </div>
                     <?php endif; ?>
                 </div>
-                <div class="col-8  center-content">
+                <div class="col-lg-8  center-content">
                     <?php if (!empty($service_image)): ?>
                         <div class="service-open-img radius15 overflow-hidden w-100 dmb-50">
                             <img src="<?php echo $service_image; ?>" class="w-100 h-100 object-cover" alt="">
