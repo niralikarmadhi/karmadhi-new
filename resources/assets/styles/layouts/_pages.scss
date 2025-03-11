@@ -24,6 +24,9 @@ html {
 
         .header-logo {
             height: 50px;
+            @include media-breakpoint-down(lg) { 
+                height: 32px;
+            }
         }
 
         .black-logo {
