@@ -24,7 +24,7 @@ $technology = get_field('technology');
                 </div>
             </div>
             <div class="col-lg-8">
-                <div class="ms-5">
+                <div class="ms-lg-5 tmt-20">
                     <div class="animate--text inter-bold font25 text--color dmb-5 mt-2"><?= the_title(); ?></div>
                     <?php if (!empty($content)): ?> <div class="animate--text inter-bold font16 text--color dmb-5 mt-2"><?= $content; ?></div> <?php endif; ?>
                     <?php if (!empty($social_icon)): ?>
@@ -55,7 +55,7 @@ $technology = get_field('technology');
                             <?php foreach ($technology as $img):
                                 if (!empty($img['url'])):
                             ?>
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-2 col-6 tmb-20">
                                         <div class="technology-img">
                                             <img src="<?= $img['url'] ?>" alt="" class="w-100 h-100 object-fit-contain">
                                         </div>

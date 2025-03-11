@@ -1,8 +1,13 @@
-.open-blog-section{
-    .open-blog-img{
+.open-blog-section {
+    .open-blog-img {
         height: 500px;
+
+        @include media-breakpoint-down(lg) {
+            height: 350px;
+        }
     }
-    .inner-blog-img{
+
+    .inner-blog-img {
         height: 350px;
     }
 }
