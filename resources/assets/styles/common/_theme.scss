@@ -26,6 +26,23 @@
         padding-right: 20px;
     }
 }
+.container--large {
+    max-width: 1440px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1920px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    @include media-breakpoint-down(lg) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 .row {
     margin-inline: 0px;
@@ -245,5 +262,10 @@
                 }
             }
         }
+    }
+
+    @include media-breakpoint-down(lg){
+        width: 30px;
+        height: 30px;
     }
 }

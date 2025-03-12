@@ -13,7 +13,7 @@ $copyright_text = get_field('copyright_text', 'option');
 
 ?>
 <footer class="footer">
-    <div class="container-large">
+    <div class="container-large container--large">
         <div class="row align-items-baseline">
             <div class="col-xl-7">
                 <a href="#" class="d-inline-flex">
@@ -31,7 +31,7 @@ $copyright_text = get_field('copyright_text', 'option');
                     <?php endif; ?>
                 </a>
                 <?php if (!empty($content)): ?>
-                    <div class="urbanist font20 text--color dmb-10 col-lg-7 col-12">
+                    <div class="urbanist font20 text--color dmb-10 col-lg-7 col-12 res_font16">
                         <?= $content; ?>
                     </div>
                 <?php endif; ?>
@@ -51,7 +51,7 @@ $copyright_text = get_field('copyright_text', 'option');
             </div>
             <div class="col-xl-5 tmt-50">
                 <?php if (!empty($news_letter_heading)): ?>
-                    <div class="inter-bold font30 text--color dmb-10 tmb-0">
+                    <div class="inter-bold font30 text--color dmb-10 tmb-0 res_font26">
                         <?= $news_letter_heading; ?>
                     </div>
                 <?php endif; ?>
@@ -62,9 +62,9 @@ $copyright_text = get_field('copyright_text', 'option');
             </div>
         </div>
 
-        <div class="spacing dmb-50"></div>
+        <div class="spacing dmb-50 tmb-25"></div>
         <div class="divider border border-bottom-0 border-start-0 border-end-0 border--color"></div>
-        <div class="spacing dmb-50"></div>
+        <div class="spacing dmb-50 tmb-25"></div>
 
         <div class="d-flex align-items-baseline justify-content-between flex-lg-row flex-column-reverse">
             <div class="d-flex col-lg-6 col-12 flex-wrap">
@@ -86,7 +86,7 @@ $copyright_text = get_field('copyright_text', 'option');
                             <div class="detail-icon pe-2">
                                 <img src="<?= get_template_directory_uri(); ?>/assets/images/phone.svg" alt="" class="w-100 h-100">
                             </div>
-                            <div class="urbanist font20 text--color">
+                            <div class="urbanist font20 text--color res_font16">
                                 <?= $contact_box['contact_number'] ?>
                             </div>
                         </a>
@@ -96,7 +96,7 @@ $copyright_text = get_field('copyright_text', 'option');
                             <div class="detail-icon pe-2">
                                 <img src="<?= get_template_directory_uri(); ?>/assets/images/email.svg" alt="" class="w-100 h-100">
                             </div>
-                            <div class="urbanist font20 text--color">
+                            <div class="urbanist font20 text--color res_font16">
                                 <?= $contact_box['email'] ?>
                             </div>
                         </a>
@@ -106,7 +106,7 @@ $copyright_text = get_field('copyright_text', 'option');
                             <div class="detail-icon pe-2">
                                 <img src="<?= get_template_directory_uri(); ?>/assets/images/location.svg" alt="" class="w-100 h-100">
                             </div>
-                            <div class="urbanist font20 text--color">
+                            <div class="urbanist font20 text--color res_font16">
                                 <?= $contact_box['location']['title'] ?>
                             </div>
                         </a>
@@ -128,7 +128,7 @@ $copyright_text = get_field('copyright_text', 'option');
                             <div class="detail-icon pe-2">
                                 <img src="<?= get_template_directory_uri(); ?>/assets/images/phone.svg" alt="" class="w-100 h-100">
                             </div>
-                            <div class="urbanist font20 text--color">
+                            <div class="urbanist font20 text--color res_font16">
                                 <?= $contact_box2['contact_number'] ?>
                             </div>
                         </a>
@@ -138,7 +138,7 @@ $copyright_text = get_field('copyright_text', 'option');
                             <div class="detail-icon pe-2">
                                 <img src="<?= get_template_directory_uri(); ?>/assets/images/email.svg" alt="" class="w-100 h-100">
                             </div>
-                            <div class="urbanist font20 text--color">
+                            <div class="urbanist font20 text--color res_font16">
                                 <?= $contact_box2['email'] ?>
                             </div>
                         </a>
@@ -148,7 +148,7 @@ $copyright_text = get_field('copyright_text', 'option');
                             <div class="detail-icon pe-2">
                                 <img src="<?= get_template_directory_uri(); ?>/assets/images/location.svg" alt="" class="w-100 h-100">
                             </div>
-                            <div class="urbanist font20 text--color">
+                            <div class="urbanist font20 text--color res_font16">
                                 <?= $contact_box2['location']['title'] ?>
                             </div>
                         </a>
@@ -168,7 +168,7 @@ $copyright_text = get_field('copyright_text', 'option');
                                             <?php if (!empty($nav_link['link']['url'])): ?>
                                                 <li class="dmb-15">
                                                     <a href="<?= $nav_link['link']['url'] ?>"
-                                                        class="text--color white-btn urbanist font20 res_font18 rounded-pill text-decoration-none"><?= $nav_link['link']['title'] ?></a>
+                                                        class="text--color white-btn urbanist font20 res_font16 rounded-pill text-decoration-none"><?= $nav_link['link']['title'] ?></a>
                                                 </li>
                                             <?php endif; ?>
                                         <?php endforeach; ?>
@@ -181,20 +181,20 @@ $copyright_text = get_field('copyright_text', 'option');
             <?php endif; ?>
         </div>
 
-        <div class="spacing dmb-50"></div>
+        <div class="spacing dmb-50 tmb-20"></div>
         <div class="divider border border-bottom-0 border-start-0 border-end-0 border--color"></div>
-        <div class="spacing dmb-40"></div>
+        <div class="spacing dmb-40 tmb-15"></div>
         <?php if (!empty($copyright_text)): ?>
             <div class="text-center">
-                <a href="<?= $copyright_text['url'] ?>" target="<?= $copyright_text['target'] ?>" class="text-decoration-none urbanist font20 text--color res_font18">
+                <a href="<?= $copyright_text['url'] ?>" target="<?= $copyright_text['target'] ?>" class="text-decoration-none urbanist font20 text--color res_font16">
                     <?= $copyright_text['title']; ?>
                 </a>
             </div>
         <?php endif; ?>
-        <div class="spacing dmb-35"></div>
+        <div class="spacing dmb-35 tmb-15"></div>
     </div>
     <section class="mode-btn position-fixed">
-        <div class="toggle-switch">
+        <div class="toggle-switch tmb-25">
             <input type="checkbox"  id="toggle-mode" />
             <label for="toggle" class="round-button">
                 <div></div>
