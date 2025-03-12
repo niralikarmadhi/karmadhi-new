@@ -79,7 +79,7 @@
                         <?php endif; ?>
                     <?php else: ?>
                         <?php if (!empty($modal_button_text)): ?>
-                            <a href="#FreeQuote" class="theme-btn transition text--color text-decoration-none white-btn urbanist font20 rounded-pill" data-bs-toggle="modal">
+                            <a href="#FreeQuote" class="theme-btn transition text--color text-decoration-none white-btn urbanist font20 rounded-pill res_font14" data-bs-toggle="modal">
                                 <span class="btn-text"><?= $modal_button_text; ?></span>
                                 <span class="arrow">
                                     <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@
                         <?php endif; ?>
                     <?php else: ?>
                         <?php if (!empty($modal_button_text)): ?>
-                            <a href="#FreeQuote" class="theme-btn transition text--color text-decoration-none white-btn urbanist font20 rounded-pill" data-bs-toggle="modal">
+                            <a href="#FreeQuote" class="theme-btn transition text--color text-decoration-none white-btn urbanist font20 rounded-pill res_font14" data-bs-toggle="modal">
                                 <span class="btn-text"><?= $modal_button_text; ?></span>
                                 <span class="arrow">
                                     <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg"

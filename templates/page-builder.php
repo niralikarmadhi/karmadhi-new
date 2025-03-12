@@ -671,7 +671,7 @@ $flexibleContent = get_field("flexible_content");
                                 <div class="closet-item">
                                     <div class="closet-header d-flex align-items-center justify-content-between cursor-pointer dpt-40 dpb-40 tpt-20 tpb-20">
                                         <?php if (!empty($accordian['heading'])): ?>
-                                            <div class="closet-header-title inter-semibold font35 text--color res_font20">
+                                            <div class="closet-header-title inter-semibold font35 text--color res_font20 me-2 me-lg-0">
                                                 <?= $accordian['heading']; ?></div>
                                         <?php endif; ?>
                                         <div class="accordion-close transition rounded-pill d-flex justify-content-center align-items-center ">
